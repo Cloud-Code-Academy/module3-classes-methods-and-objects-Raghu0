@@ -7,7 +7,7 @@
  * Users of this class can expect to gain an understanding of the basics of unit testing in Apex and Salesforce, and be equipped to write their own tests for custom code.
  */
 
-@IsTest
+@isTest
 public with sharing class ClassesObjectsMethodsTest {
     @IsTest
     static void testPracticeStringMethods() {
@@ -60,7 +60,7 @@ public with sharing class ClassesObjectsMethodsTest {
         Assert.areEqual(expected3, result3, 'Incorrect duplicate removal for ' + input3);
     }
 
-    @IsTest
+    @isTest
     static void testCountVowels() {
         Integer result = ClassesObjectsMethods.countVowels('Hello World!');
         Assert.areEqual(3, result, 'Incorrect vowel count for "Hello World!"');
